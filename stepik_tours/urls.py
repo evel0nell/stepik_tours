@@ -13,3 +13,5 @@ urlpatterns = [
     path('tour/<int:id>/', TourView.as_view())
 
 ]
+handler404 = "tours.views.handler404"
+handler500 = "tours.views.handler500"
